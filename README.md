@@ -4,7 +4,7 @@ GitHub Repository:
 [https://github.com/Dineshvirat123/aws-lb-controller-domain-configuration.git](https://github.com/Dineshvirat123/aws-lb-controller-domain-configuration.git)
 
  Live Demo:
-[https://www.dineshcloud.co.in](https://www.dineshcloud.co.in)
+[https://dineshcloud.co.in](https://dineshcloud.co.in)
 
 This project focuses on Kubernetes networking and different ways to expose microservices in production environments using AWS cloud-native services.
 
@@ -19,7 +19,7 @@ Instead of focusing on application functionality, the main goal was to understan
 ✅ Kubernetes Ingress
 
 ━━━━━━━━━━━━━━━━━━━
-🧩 Microservices Used
+ Microservices Used
 ━━━━━━━━━━━━━━━━━━━
 
 • Home Service
