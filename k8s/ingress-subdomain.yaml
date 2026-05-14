@@ -24,7 +24,7 @@ spec:
   ingressClassName: alb
   rules:
   # Subdomain for App 1 - Customer Service
-  - host: app1.learndevops01.click
+  - host: home.dineshcloud.co.in
     http:
       paths:
       - path: /
@@ -36,7 +36,7 @@ spec:
               number: 80
   
   # Subdomain for App 2 - Analytics Dashboard
-  - host: app2.learndevops01.click
+  - host: profile.dineshcloud.co.in
     http:
       paths:
       - path: /
@@ -48,7 +48,7 @@ spec:
               number: 80
   
   # Subdomain for App 3 - API Gateway
-  - host: app3.learndevops01.click
+  - host: projects.dineshcloud.co.in
     http:
       paths:
       - path: /
@@ -60,7 +60,7 @@ spec:
               number: 80
   
   # Optional: Main domain redirect to App1
-  - host: learndevops01.click
+  - host: dineshcloud.co.in
     http:
       paths:
       - path: /
@@ -72,7 +72,7 @@ spec:
               number: 80
   
   # Optional: www domain redirect to main domain
-  - host: www.learndevops01.click
+  - host: www.dineshcloud.co.in
     http:
       paths:
       - path: /
