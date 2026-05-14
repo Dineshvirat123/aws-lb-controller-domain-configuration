@@ -16,7 +16,7 @@ spec:
   rules:
   - http:
       paths:
-        - path: /app1
+        - path: /home
           pathType: Prefix
           backend:
             service:
@@ -24,7 +24,7 @@ spec:
               port:
                 number: 80
 
-        - path: /app2
+        - path: /profile
           pathType: Prefix
           backend:
             service:
@@ -32,7 +32,7 @@ spec:
               port:
                 number: 80
 
-        - path: /app3
+        - path: /projects
           pathType: Prefix
           backend:
             service:
