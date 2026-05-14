@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: app1-container
-          image: dinesh/app1:3.0.0
+          image: dinesh2918/app1:3.0.0
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
