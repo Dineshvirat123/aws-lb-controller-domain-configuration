@@ -16,31 +16,31 @@ metadata:
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
     alb.ingress.kubernetes.io/ssl-redirect: '443'
     # Certificate ARN - Replace with your ACM certificate ARN
-    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:ap-south-1:XXXXXXXXXXXX:certificate/xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:228235827191:certificate/38748037-00cf-4b40-8fe3-c06eed80caaf
     alb.ingress.kubernetes.io/ssl-policy: ELBSecurityPolicy-TLS-1-2-2017-01
     alb.ingress.kubernetes.io/backend-protocol: HTTP
     alb.ingress.kubernetes.io/group.name: microservices-group
 spec:
   ingressClassName: alb
   rules:
-  - host: learndevops01.click
+  - host: dineshcloud.co.in
     http:
       paths:
-      - path: /app1
+      - path: /home
         pathType: Prefix
         backend:
           service:
             name: app1-service
             port:
               number: 80
-      - path: /app2
+      - path: /profile
         pathType: Prefix
         backend:
           service:
             name: app2-service
             port:
               number: 80
-      - path: /app3
+      - path: /projects
         pathType: Prefix
         backend:
           service:
@@ -55,7 +55,7 @@ spec:
             port:
               number: 80
   # Optional: Add www domain redirect
-  - host: www.learndevops01.click
+  - host: www.dineshcloud.co.in
     http:
       paths:
       - path: /
