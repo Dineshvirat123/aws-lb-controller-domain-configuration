@@ -54,6 +54,6 @@ spec:
     app: app3
   ports:
     - port: 80
-      targetPort: 5004
+      targetPort: 5002
       protocol: TCP
   type: ClusterIP
